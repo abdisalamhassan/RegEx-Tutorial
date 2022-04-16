@@ -35,7 +35,13 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Anchors
 Anchors in boats are devices that are attached on bots that are heavy weights used by captains to connect to the seabed below to stop the boat from moving.
 
+That same logic applies to anchors in regex. They can let a user specify that you want to match digit in a specific spot in a line of text. It is important to know that not all anchors are created equal. The are string anchors, line anchors and attempt anchors.
 
+-String anchors include the caret syntax(^) and the dollar syntax($). The carter syntax matches the start of the regex string, whereas the dollar syntax matches the end of the regex sting.
+
+So in the following sting (password123) the ^ would match with the letter 'p' and the $ would match with the number '3'
+
+-Line anchors 
 
 ### Quantifiers
 
