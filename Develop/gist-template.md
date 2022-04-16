@@ -33,6 +33,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
 Anchors in boats are devices that are attached on bots that are heavy weights used by captains to connect to the seabed below to stop the boat from moving.
 
 That same logic applies to anchors in regex. They can let a user specify that you want to match digit in a specific spot in a line of text. It is important to know that not all anchors are created equal. The are string anchors, line anchors and attempt anchors.
@@ -41,9 +42,22 @@ That same logic applies to anchors in regex. They can let a user specify that yo
 
 So in the following sting (password123) the ^ would match with the letter 'p' and the $ would match with the number '3'
 
--Line anchors 
+-Line anchors operate a little diffrent. Lets make a new string(password\123). The caret(^) syntax matches after each line break *IN ADDITION* to matching with the start of the string. So from (password\123) it would match 'p' and '2'.
+
+-Now reverse that logic for the dollar($) syntax. In the 'password\123' where would the match apply?
+   -if you said 'd' and '3' you are right!
 
 ### Quantifiers
+
+Looking at the name 'Quantifiers' itself gives us a clue as to what they do. To quantify something means to count it. So in this context quantifiers mean that a pattern shows up a certain number of times. Lets take a look at the diffrent types of quantifiers: 
+
+-('+"):
+-('*"):
+-('?'):
+-('{n}'):
+-('{m,n}'):
+-('{n,}'):
+
 
 ### OR Operator
 
